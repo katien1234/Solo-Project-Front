@@ -1,0 +1,76 @@
+.MasterQuizText {
+   text-align: center;
+    border: 15px solid black;
+    background-color: white; opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px
+}
+
+.Quiz {
+   text-align: center;
+  
+}
+
+.BoxAround {
+   text-align: center;
+    border: 25px solid #622569;
+    padding: 25px;
+    margin: 25px;
+    width: 39%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white
+}
+
+
+.CategoryQuestions button {
+  background-color: #622569;
+  color: white;
+  border: 2px solid #622569;
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px;
+}
+
+.CategoryQuestions button:hover {
+  background-color: white;
+  color: black;
+}
+
+.CategoryQuestions input[type=text] {
+  text-align: center;
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+.Timer {
+  text-align: center;
+  position: fixed;
+  top: 20%;
+  left:7%;
+  border: 20px solid #667292;
+  padding: 25px;
+  margin: 25px;
+  color: #563f46;
+  background-color: white;
+}
+
+.Timer button {
+  background-color: #87bdd8;
+  color: white;
+  border: 2px solid #87bdd8;
+  padding: 12px 20px;
+  margin: 10px;
+  justify-content: center;
+  margin-left: 0
+}
+
+.Timer button:hover {
+  background-color: white;
+  color: black;
+}
+
