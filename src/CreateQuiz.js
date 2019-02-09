@@ -20,7 +20,7 @@ class CreateQuiz extends Component {
             category: e.target.elements.category.value
 
         }
-        const api_call = await fetch('http://localhost:1337/localhost:8080/QuizAPI/api/quiz/deleteQuiz/' + requestbody, {
+        const api_call = await fetch('katie4113.uksouth.cloudapp.azure.com/QuizAPI/api/quiz/deleteQuiz/' + requestbody, {
             method: 'DELETE',
         });
 
@@ -38,7 +38,7 @@ class CreateQuiz extends Component {
             answer: e.target.elements.answer.value,
             category: e.target.elements.category.value
         }
-        const api_call = await fetch('http://localhost:1337/localhost:8080/QuizAPI/api/quiz/createQuiz', {
+        const api_call = await fetch('katie4113.uksouth.cloudapp.azure.com/QuizAPI/api/quiz/createQuiz', {
             method: 'POST',
             body: JSON.stringify(requestbody)
         });
@@ -59,7 +59,7 @@ class CreateQuiz extends Component {
             answer: e.target.elements.answer.value,
             category: e.target.elements.category.value
         }
-        const api_call = await fetch('http://localhost:1337/localhost:8080/QuizAPI/api/quiz/updateQuiz/' + requestbody.question, {
+        const api_call = await fetch('katie4113.uksouth.cloudapp.azure.com/QuizAPI/api/quiz/updateQuiz/' + requestbody.question, {
             method: 'PUT',
             body: JSON.stringify(requestbody)
 
@@ -78,7 +78,7 @@ class CreateQuiz extends Component {
     getQuiz = async (e) => {
         e.preventDefault();
         try {
-            const api_call = await fetch('http://localhost:1337/localhost:8080/QuizAPI/api/quiz/getQuiz');
+            const api_call = await fetch('katie4113.uksouth.cloudapp.azure.com/QuizAPI/api/quiz/getQuiz');
             const response = await api_call.json();
             const tempQuizList = []
             var i = 0
@@ -106,7 +106,7 @@ class CreateQuiz extends Component {
     getQuizByCat = async (e) => {
         e.preventDefault();
         try{
-        const api_call = await fetch('http://localhost:1337/localhost:8080/QuizAPI/api/quiz/getQuizByCat/' + e.target.elements.category.value);
+        const api_call = await fetch('katie4113.uksouth.cloudapp.azure.com/QuizAPI/api/quiz/getQuizByCat/' + e.target.elements.category.value);
         const response = await api_call.json();
         const tempQuizList = []
         var i = 0
