@@ -20,7 +20,7 @@ class Login extends Component {
             username: e.target.elements.username.value,
             password: e.target.elements.password.value
         }
-        const api_call = await fetch('katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/account/updateAccount/' + requestbody.email, {
+        const api_call = await fetch('http://katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/account/updateAccount/' + requestbody.email, {
             method: 'PUT',
             body: JSON.stringify(requestbody)
 
@@ -42,7 +42,7 @@ class Login extends Component {
             email: e.target.elements.email.value,
 
         }
-        const api_call = await fetch('katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/account/deleteAccount/' + requestbody, {
+        const api_call = await fetch('http://katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/account/deleteAccount/' + requestbody, {
             method: 'DELETE',
         });
         try {
@@ -64,7 +64,7 @@ class Login extends Component {
             username: e.target.elements.username.value,
             password: e.target.elements.password.value
         }
-        const api_call = await fetch('katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/account/createAccount', {
+        const api_call = await fetch('http://katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/account/createAccount', {
             method: 'POST',
             body: JSON.stringify(requestbody)
         });
@@ -85,7 +85,7 @@ class Login extends Component {
             email: e.target.elements.email.value,
             password: e.target.elements.password.value
         }
-        const api_call = await fetch('katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/account/verifyAccount', {
+        const api_call = await fetch('http://katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/account/verifyAccount', {
             method: 'POST',
             body: JSON.stringify(requestbody)
 

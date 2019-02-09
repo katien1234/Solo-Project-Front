@@ -17,7 +17,7 @@ class Quiz extends Component {
 
   getQuiz = async (e) => {
     e.preventDefault();
-    const api_call = await fetch('katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/quiz/getQuiz');
+    const api_call = await fetch('http://katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/quiz/getQuiz');
     const response = await api_call.json();
 
     const tempQuizList = []
@@ -43,7 +43,7 @@ class Quiz extends Component {
   getQuizByCat = async (e) => {
     e.preventDefault();
     try {
-      const api_call = await fetch('katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/quiz/getQuizByCat/' + e.target.elements.category.value);
+      const api_call = await fetch('http://katie4113.uksouth.cloudapp.azure.com:8181/QuizAPI/api/quiz/getQuizByCat/' + e.target.elements.category.value);
       const response = await api_call.json();
       const tempQuizListCat = []
       var i = 0
